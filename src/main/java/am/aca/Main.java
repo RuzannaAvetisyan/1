@@ -2,12 +2,12 @@ package am.aca;
 
 import java.lang.reflect.*;
 import java.util.Arrays;
-import tree.Tree;
+import am.aca.tree.Tree;
 import am.aca.tree.shrub.Shrub;
 import am.aca.tree.shrub.herbs.Herbs;
 
 
-class Main{
+public class Main{
 	public static void main(String[] args) throws Exception{
 		Tree t = new Tree();
 		Shrub s = new Shrub();
@@ -46,10 +46,10 @@ class Main{
 		
 		Constructor[] cs = sc.getDeclaredConstructors();
 		System.out.println("\nconstructor");
-			for(Constructor c: cs){
-				c.setAccessible(true);
-				System.out.println(	c.getName()+"(" +Arrays.deepToString(c.getParameterTypes())+") {}");	
-			}
+		for(Constructor c: cs){
+			c.setAccessible(true);
+			System.out.println(	c.getName()+"(" +Arrays.deepToString(c.getParameterTypes())+") {}");	
+		}
 
 	}
 }

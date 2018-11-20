@@ -1,6 +1,6 @@
 package am.aca.tree;
 
- class Tree{
+public class Tree{
 	private String name;
 	private double roots;
 	private int hollow;
